@@ -61,8 +61,8 @@ canvas {
 
 .heart {
     position: fixed;
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     background: url('assets/heart.png') no-repeat center center;
     background-size: cover;
     transform: translateY(0);
