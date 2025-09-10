@@ -11,7 +11,7 @@ function createFlower() {
     flowers.push({
         x: Math.random() * canvas.width,
         y: 0,
-        size: 30 + Math.random() * 20,
+        size: 30 + Math.random() * 5,
         speed: 1 + Math.random() * 2,
     });
 }
