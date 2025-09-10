@@ -4,6 +4,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let flowers = [];
+const flowerImg = new Image();
+flowerImg.src = 'assets/flower.png';
 
 function createFlower() {
     flowers.push({
@@ -15,9 +17,7 @@ function createFlower() {
 }
 
 function drawFlower(f) {
-    let img = new Image();
-    img.src = 'assets/flower.png';
-    ctx.drawImage(img, f.x, f.y, f.size, f.size);
+    ctx.drawImage(flowerImg, f.x, f.y, f.size, f.size);
 }
 
 function animateFlowers() {
@@ -67,3 +67,54 @@ function createHeart() {
 window.addEventListener('scroll', () => {
     createFlower();
 });
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
+particlesJS('particles-js', {
+  "particles": {
+    "number": {
+      "value": 80
+    },
+    "color": {
+      "value": ["#ff69b4", "#ffc0cb", "#fff0f5"]
+    },
+    "shape": {
+      "type": "image",
+      "image": [
+        {
+          "src": "assets/heart.png",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "src": "assets/flower.png",
+          "width": 20,
+          "height": 20
+        }
+      ]
+    },
+    "opacity": {
+      "value": 0.7
+    },
+    "size": {
+      "value": 10,
+      "random": true
+    },
+    "move": {
+      "enable": true,
+      "speed": 2
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      }
+    }
+  }
+});
+
