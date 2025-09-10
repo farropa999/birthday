@@ -61,12 +61,12 @@ canvas {
 
 .heart {
     position: fixed;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background: url('assets/heart.png') no-repeat center center;
     background-size: cover;
     transform: translateY(0);
-    animation: floatUp 3s forwards;
+    animation: floatUp 4s forwards;
 }
 
 @keyframes floatUp {
