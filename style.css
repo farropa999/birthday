@@ -59,6 +59,14 @@ canvas {
     pointer-events: none;
 }
 
+.photo img {
+    width: 150px;      /* Limits the width */
+    max-width: 100%;   /* Ensures it doesn't overflow on smaller screens */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
 .heart {
     position: fixed;
     width: 200px;
