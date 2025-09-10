@@ -60,12 +60,32 @@ canvas {
 }
 
 .photo img {
-    width: 150px;      /* Limits the width */
-    max-width: 100%;   /* Ensures it doesn't overflow on smaller screens */
+    width: 150px;
+    max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+.photo p {
+    margin-top: 10px;
+    color: #ff69b4;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .photo img {
+        width: 100px;
+    }
+    .photo p {
+        font-size: 14px;
+    }
+}
+
 
 .heart {
     position: fixed;
