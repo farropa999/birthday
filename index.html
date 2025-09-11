@@ -15,38 +15,49 @@
             <h1>Happy Birthday Pradnya!</h1>
             <p>Scroll and click to see the magic unfold!</p>
             <button onclick="showHearts()">Send Love ❤️</button>
+            <button onclick="showSection('about')">About You</button>
+            <button onclick="showSection('gallery')">Memory Gallery</button>
+            <button onclick="showSection('final')">Final Message</button>
         </section>
 
-        <section id="about">
+        <section id="about" class="hidden">
             <h2>About You</h2>
             <p>You light up the world with your smile and kindness!</p>
         </section>
 
-        <section id="gallery">
+        <section id="gallery" class="hidden">
             <h2>Memory Gallery</h2>
-            <img src="assets/teddy.png" alt="Soft Toy" class="soft-toy" />
-             <p>Hello My Queen Simba is here with you!</p>
-            <br>
-            <img src="assets/IMG-20250629-WA0017.png" alt="Lift" />
-            <p>This was the first time i ever saw you in choti, Kitna maska lagaya tab jaake mili thi yeh photo!</p>
-            <br>
-            <img src="assets/IMG-20250712-WA0032.jpg" alt="Pune" />
-            <p>This photo is always gonna be special for me, sirf 2 din ke liye gaye the aap pune and it was feeling like forever and this photo came as a saviour for me, you looked too cute in this, as always!</p>
-            <br>
-            <img src="assets/IMG-20250810-WA0030.jpg" alt="Car" />
-            <p>Ear piercing how can w forget? Looked too good on you, aur waise is photo me makeup ka kamaal hai yaa filter? just kidding you don't need any of these too look beautiful!</p>
-            <br>
-            <img src="assets/IMG_20250616_181750.jpg" alt="Kanda" />
-            <p>KAANDA BHAJJI! first time meine aapki haath se bani hui khaayi thi and it was tasty as hell, is time pe humari fight hui thi hehehehehe, and i was trying to make it up to you, as always, for my cute little Angry Bird</p>
-            <br>
-            <img src="assets/IMG_20250623_153606.jpg" alt="Cap" />
-            <p>Remember this? "yeh Cap to mein pehnungi he nhi, meine jaha pehle kaam kiya vaha nhi pehna yaha kya pehnungi" but honestly buri nhi lag rahi thin yaar, it was looking good on you, ab woh alag baat hai aap kuch bhi pehno ache he lagte ho!</p>
-            <br>
-            <img src="assets/IMG_20250804_214144.jpg" alt="Station" />
-            <p>Our first ever photo together, woh bhi dhangse nhi liya, kya bolne ka abhi? dono pagal lag rahe hai, ek toh actual me hai!</p>
+            <div class="photo">
+                <img src="assets/teddy.png" alt="Soft Toy" />
+                <p>Hello My Queen Simba is here with you!</p>
+            </div>
+            <div class="photo">
+                <img src="assets/IMG-20250629-WA0017.png" alt="Lift" />
+                <p>This was the first time i ever saw you in choti, Kitna maska lagaya tab jaake mili thi yeh photo!</p>
+            </div>
+            <div class="photo">
+                <img src="assets/IMG-20250712-WA0032.jpg" alt="Pune" />
+                <p>This photo is always gonna be special for me, sirf 2 din ke liye gaye the aap pune and it was feeling like forever and this photo came as a saviour for me, you looked too cute in this, as always!</p>
+            </div>
+            <div class="photo">
+                <img src="assets/IMG-20250810-WA0030.jpg" alt="Car" />
+                <p>Ear piercing how can w forget? Looked too good on you, aur waise is photo me makeup ka kamaal hai yaa filter? just kidding you don't need any of these too look beautiful!</p>
+            </div>
+            <div class="photo">
+                <img src="assets/IMG_20250616_181750.jpg" alt="Kanda" />
+                <p>KAANDA BHAJJI! first time meine aapki haath se bani hui khaayi thi and it was tasty as hell, is time pe humari fight hui thi hehehehehe, and i was trying to make it up to you, as always, for my cute little Angry Bird</p>
+            </div>
+            <div class="photo">
+                <img src="assets/IMG_20250623_153606.jpg" alt="Cap" />
+                <p>Remember this? "yeh Cap to mein pehnungi he nhi, meine jaha pehle kaam kiya vaha nhi pehna yaha kya pehnungi" but honestly buri nhi lag rahi thin yaar, it was looking good on you, ab woh alag baat hai aap kuch bhi pehno ache he lagte ho!</p>
+            </div>
+            <div class="photo">
+                <img src="assets/IMG-20250804-214144.jpg" alt="Station" />
+                <p>Our first ever photo together, woh bhi dhangse nhi liya, kya bolne ka abhi? dono pagal lag rahe hai, ek toh actual me hai!</p>
+            </div>
         </section>
 
-        <section id="final">
+        <section id="final" class="hidden">
             <h2>Wishing You Love & Joy!</h2>
             <button onclick="showMoreHearts()">More Love 💕</button>
         </section>
@@ -55,6 +66,10 @@
     <canvas id="fallingCanvas"></canvas>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
     <script src="script.js"></script>
 </body>
 </html>
