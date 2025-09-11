@@ -76,7 +76,7 @@ window.addEventListener('resize', () => {
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 40
+      "value": 20
     },
     "color": {
       "value": ["#ff69b4", "#ffc0cb", "#fff0f5"]
