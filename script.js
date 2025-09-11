@@ -36,13 +36,13 @@ setInterval(createFlower, 300);
 animateFlowers();
 
 function showHearts() {
-    for(let i=0; i<20; i++) {
+    for(let i=0; i<10; i++) {
         createHeart();
     }
 }
 
 function showMoreHearts() {
-    for(let i=0; i<50; i++) {
+    for(let i=0; i<25; i++) {
         createHeart();
     }
 }
