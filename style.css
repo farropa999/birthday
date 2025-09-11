@@ -8,6 +8,18 @@ body {
 .hidden {
     display: none;
 }
+/* Hidden sections are invisible and slightly shifted */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* When sections are visible, they appear smoothly */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 #particles-js {
     position: fixed;
