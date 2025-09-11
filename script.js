@@ -118,10 +118,15 @@ particlesJS('particles-js', {
   }
 });
 function showSection(sectionId) {
-    document.getElementById('about').classList.add('hidden');
-    document.getElementById('gallery').classList.add('hidden');
-    document.getElementById('final').classList.add('hidden');
+    const sections = ['about', 'gallery', 'final'];
+    sections.forEach(id => {
+        const sec = document.getElementById(id);
+        sec.classList.add('hidden');
+        sec.classList.remove('visible');
+    });
 
-    document.getElementById(sectionId).classList.remove('hidden');
+    const section = document.getElementById(sectionId);
+    section.classList.remove('hidden');
+    section.classList.add('visible');
 }
 
