@@ -117,4 +117,11 @@ particlesJS('particles-js', {
     }
   }
 });
+function showSection(sectionId) {
+    document.getElementById('about').classList.add('hidden');
+    document.getElementById('gallery').classList.add('hidden');
+    document.getElementById('final').classList.add('hidden');
+
+    document.getElementById(sectionId).classList.remove('hidden');
+}
 
